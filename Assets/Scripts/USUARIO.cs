@@ -70,7 +70,7 @@ public class USUARIO : MonoBehaviour
          
     }
 
-    private void OnCollisionEnter (Collision collision)
+   /* private void OnCollisionEnter (Collision collision)
     {
         FLOR_CONTROLLER flor = collision.gameObject.GetComponent<FLOR_CONTROLLER>();
 
@@ -78,5 +78,5 @@ public class USUARIO : MonoBehaviour
         {
             flor.CollectItem();
         }
-    }
+    }*/
 }
