@@ -12,9 +12,9 @@ public class FLOR_CONTROLADOR : MonoBehaviour
     
     void Update()
     {
-        if (activo = true)
+        if (activo == true)
         {
-            if(Input.GetKeyDown("mouse 0")) //agarra con boton izq del mouse
+            if(Input.GetKey("mouse 0")) //agarra con boton izq del mouse
             {
                 flor.transform.SetParent(mano); //que la flor sea hija de la mano
                 flor.transform.position = mano.position;
@@ -23,14 +23,14 @@ public class FLOR_CONTROLADOR : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown("mouse 1")) //suelta con boton der del mouse
+        if (Input.GetKey("mouse 1")) //suelta con boton der del mouse
         {
             flor.transform.SetParent(null);
             flor.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 
-    void OnTriggerEnter (Collider other) 
+    private void OnTriggerEnter (Collider other) 
     { 
         if (other.tag == "Player")
         {
@@ -40,7 +40,7 @@ public class FLOR_CONTROLADOR : MonoBehaviour
         }
     }
 
-    void OnTriggerExit (Collider other)
+    private void OnTriggerExit (Collider other)
     {
         if (other.tag == "Player")
         {

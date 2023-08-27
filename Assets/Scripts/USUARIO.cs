@@ -65,7 +65,7 @@ public class USUARIO : MonoBehaviour
 
     void Update()
     {
-      Movimiento();
+        Movimiento();
        MovCamara();
          
     }
