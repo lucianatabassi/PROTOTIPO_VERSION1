@@ -12,7 +12,7 @@ public class MOV_CAMARA : MonoBehaviour
 
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked; //para que el cursor no aparezca cuando se esta ejecutando
     }
 
     // Update is called once per frame

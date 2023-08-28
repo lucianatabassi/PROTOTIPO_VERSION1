@@ -32,7 +32,7 @@ public class FLOR_CONTROLADOR : MonoBehaviour
 
     private void OnTriggerEnter (Collider other) 
     { 
-        if (other.tag == "Player")
+        if (other.tag == "Player") //si el usuario entra dentro del campo de deteccion puede agarrar la flor
         {
             activo = true;
             Debug.Log("aaa");
@@ -42,7 +42,7 @@ public class FLOR_CONTROLADOR : MonoBehaviour
 
     private void OnTriggerExit (Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player") //si sale del campo de deteccion ya no puede agarrar la flor
         {
             activo = false;
         }

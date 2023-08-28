@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class USUARIO : MonoBehaviour
 {
+
+    //ESTE SCRIPT ES CODIGO VIEJO PERO LO DEJE POR LAS DUDAS. NO SE ESTA USANDO
     private Rigidbody rb;
     public float velMov;
 
